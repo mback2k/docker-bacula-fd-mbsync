@@ -2,7 +2,7 @@ FROM mback2k/bacula-fd
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        isync && \
+        isync ca-certificates && \
     apt-get clean
 
 VOLUME /var/backups/maildirs
