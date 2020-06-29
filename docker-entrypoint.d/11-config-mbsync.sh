@@ -25,9 +25,10 @@ Channel backup-$account
 Master :master-$account-imap:
 Slave :slave-$account-maildir:
 Patterns *
-Create Slave
-CopyArrivalDate yes
 Sync Pull
+Create Slave
+Remove Slave
+CopyArrivalDate yes
 SyncState *
 " >> /etc/bacula/mbsync.conf
     done
