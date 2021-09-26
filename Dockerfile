@@ -1,4 +1,4 @@
-FROM mback2k/bacula-fd
+FROM ghcr.io/mback2k/docker-bacula-fd:latest
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
